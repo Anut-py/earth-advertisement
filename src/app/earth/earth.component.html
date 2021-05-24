@@ -1,0 +1,108 @@
+<h1>Welcome to Earth!</h1>
+<h2 style="color: grey">The place we call home</h2>
+<p>Wondering where to go for your intergalactic vacation? You're at the right place.</p>
+<p>Earth is the perfect planet to go to! Here, we have liquid water, an atmosphere and magnetosphere, and much more!</p>
+<div style="height: 310px">
+  <div style="float: left; width: 60%">
+    <p>The Earth is a rocky planet, which means it has solid ground and a (relatively) small size.</p>
+    <p>Since the Earth is 93 million miles from the Sun, the temperature is cold enough that water doesn't vaporise,
+      and hot enough that it doesn't freeze.</p>
+    <p>This means that the water is liquid, and it is perfect for life.</p>
+    <p>Since the Earth is tilted, as it orbits the sun, the Northern hemisphere gets more light and the Southern
+      hemisphere gets less light, or the other way around.</p>
+    <p>This leads to seasons. Whichever hemisphere has more light has summer, and the other one has winter.</p>
+    <p>Sometimes, both hemispheres get roughly the same amount of sunlight. This happens twice in the year: once after
+      summer (we call this autumn), and once after winter (we call this spring).</p>
+    <p>These four seasons happen every year, and they each take the same amount of time.</p>
+  </div>
+  <mat-card style="float: right; width: 30%; margin-right: 5%">
+    <mat-card-title>The Earth</mat-card-title>
+    <mat-card-subtitle>Quick Info</mat-card-subtitle>
+    <mat-card-content>
+      <ul>
+        <li>Radius: 3,959 miles</li>
+        <li>Distance from Sun: 93 million miles</li>
+        <li>Orbit time: 365 days, 6 hours</li>
+        <li>Liquid water: Yes</li>
+        <li>Atmosphere: Yes</li>
+        <li>Magnetosphere: Yes</li>
+        <li>Moons: 1 moon</li>
+      </ul>
+      <p>Fun fact: Earth is the only planet we know<br/>that has life!</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+<div style="height: 340px">
+  <video src="/assets/videos/seasons.mp4" width="520" style="float: left" controls></video>
+  <div style="float: left; margin-left: 20px; width: calc(100% - 600px)">
+    <p>The video on the left shows how this works.</p>
+    <p>It shows the Earth orbiting the Sun, and on the corner it shows how it looks from the point of view of the
+      Sun.</p>
+    <p>In the corner, the Earth's axis (an imaginary line through the center of the Earth) is visible to show which
+      hemisphere is pointing to the Sun.</p>
+    <p>As you can see, as the Earth orbits the Sun, the hemispheres point towards and away from the Sun.</p>
+    <p>On the surface of the Earth, we have a mix of water and land, as you can see in the video.</p>
+    <p>About 71% of Earth is water and about 29% is land. On land we have landforms like mountains, valleys, canyons,
+      etc.</p>
+    <p>Landforms are variations in the surface of the Earth. This is why the Earth's surface isn't completely flat.</p>
+    <p>These landforms are formed over time by erosion and weathering.</p>
+  </div>
+</div>
+<div style="height: 450px">
+  <div style="float: left; width: 45%">
+    <p>On Earth we have 2 types of water sources: freshwater and saltwater.</p>
+    <p>Freshwater is pure water that is safe to drink. It is found in rivers and lakes, and also in glaciers at the
+      poles.</p>
+    <p>Saltwater is water saturated with salt. Saltwater is not safe to drink, and you might die if you drink too much
+      of
+      it.</p>
+    <p>Saltwater is found in oceans and seas.</p>
+    <p>The Earth has an atmosphere made up of 78% nitrogen, 21% oxygen, 0.9% argon, and 0.1% other gases.</p>
+    <p>The concentration of oxygen is enough for us to breath, but low enough that it doesn't set everything on
+      fire.</p>
+    <p>The Earth has just one moon. It orbits the Earth every 28 days. Over these days it goes through a number of
+      "phases".</p>
+    <p>This means that the moon looks different in each phase. This is because only half of the Moon is lit up by the
+      Sun,
+      and at it orbits the Earth, the lit part looks bigger or smaller, depending on the time of the month.</p>
+  </div>
+  <div style="float: left; width: 50%">
+    <canvas baseChart [chartType]="chartType" [data]="data" [labels]="['Nitrogen', 'Oxygen', 'Argon', 'Other']"
+            [options]="options"></canvas>
+  </div>
+</div>
+<div style="height: 320px">
+  <div style="float: left; width: 30%; padding-left: 3%">
+    <img src="/assets/geology.svg" width="256" height="256" alt="The layers of the Earth"/>
+  </div>
+  <div style="float: left; width: 65%">
+    <p>As the Moon orbits the Earth, it causes high tides and low tides. High tides are when the sea level rises, and
+      low
+      tides are when it goes down.</p>
+    <p>The Moon's gravity pulls the water and causes high tides, and when it releases the water it causes low tides.</p>
+    <p>The Earth has 4 layers: the crust, the mantle, the outer core, and the inner core.</p>
+    <p>The crust is the outermost layer, and it is only about 40 miles deep. This is the layer that has all of our
+      continents and oceans.</p>
+    <p>The crust is in parts, called tectonic plates. These tectonic plates float on the mantle and occasionally crash
+      into each other, forming landforms like mountains.</p>
+    <p>The mantle is the second layer of the Earth. It is made of molten, semi-solid rock.</p>
+    <p>The rock in the mantle can flow, but it can only flow very slowly.</p>
+    <p>The outer core is made of liquid metal. It is made of mostly iron and nickel.</p>
+  </div>
+</div>
+<div>
+  <p>The outer core is hotter than the mantle because the deeper you go into the Earth, the hotter it gets.</p>
+  <p>Surprisingly, the inner core isn't liquid! It's solid metal, the same metals found in the outer core.</p>
+  <p>The inner core is very deep in the Earth, and the pressure there is extremely high. This pressure keeps the metal
+    solid, despite the high temperatures.</p>
+  <p>The spinning metal in the inner and outer core makes a magnetic field around the Earth, which blocks harmful
+    radiation from the Sun.</p>
+  <p>This magnetic field is called the magnetosphere. Because of the amount of radiation coming from the Sun, it becomes
+    teardrop-shaped, with the pointy part pointing away from the Sun.</p>
+</div>
+<div>
+  <h2 style="color: grey">Ready for takeoff?</h2>
+  <p>All this and more makes the Earth your perfect vacation destination!</p>
+  <p>But if you're still not convinced to come here, maybe you could see what makes our neighbor, Mars,
+    uninhabitable.</p>
+</div>

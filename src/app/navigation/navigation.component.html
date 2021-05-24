@@ -1,0 +1,38 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isHandset$ | async) ? 'over' : 'side'"
+               [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/home"><mat-icon style="margin-right: 5px">home</mat-icon> Home</a>
+      <a mat-list-item routerLink="/earth"><mat-icon style="margin-right: 5px">public</mat-icon> Earth</a>
+      <a mat-list-item routerLink="/mars"><mat-icon style="margin-right: 5px">explore</mat-icon> Mars</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="display: table; width: 100%; height: 100%">
+      <mat-toolbar color="primary">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span>Earth Advertisement</span>
+      </mat-toolbar>
+      <div style="padding: 20px">
+        <ng-content></ng-content>
+      </div>
+      <div style="display: table-footer-group">
+        <div style="display: flex; flex-direction: row; position: relative; border-top: 1px solid #bbb; height: 40px;
+        padding: 0 10px">
+          <i style="position: absolute; top: 10px">&copy; Copyright 2021 Anand Swaroop</i>
+          <h2 style="position: absolute; top: 0; right: 10px; font-weight: normal">Brought to you by <span style="font-weight: 500">Anut</span></h2>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
